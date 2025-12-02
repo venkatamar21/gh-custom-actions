@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: C:\Users\2440024\Downloads\GItHub\NInth_project\01 Starting Project\.github\actions\cached-deps
+        uses: actions/checkout@v3 
       - name: Load & cache dependencies
-        uses: ./.github/actions/cached-deps
+        uses: ./.github/actions/cached-deps 
       - name: Lint code
         run: npm run lint
   test:
