@@ -1,6 +1,7 @@
 import os
 import boto3
 import mimetypes
+import legacy_cgi
 from botocore.config import Config
 
 
